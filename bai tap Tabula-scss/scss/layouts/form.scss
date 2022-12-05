@@ -1,0 +1,14 @@
+#form {
+  .form__content {
+    display: flex;
+    align-items: center;
+    .form__left {
+      padding: 20px;
+    }
+    .form__right {
+      .form__contact {
+        display: flex;
+      }
+    }
+  }
+}

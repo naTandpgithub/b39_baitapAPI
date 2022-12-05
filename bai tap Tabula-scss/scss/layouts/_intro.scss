@@ -1,0 +1,30 @@
+#intro {
+  .card {
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.5s;
+    &:hover {
+      box-shadow: 0px 00px 25px rgba(122 120 120 / 70%);
+    }
+    img {
+      transform: scale3d(1, 1, 1);
+      transition: all 0.5s;
+      &:hover {
+        transform: scale3d(1.1, 1.1, 1.1);
+      }
+    }
+    .card-title {
+      text-align: center;
+      p {
+        @include style-text($fs-2, $fw-2, $color-purple-1);
+      }
+      h4 {
+        @include style-text($fs-4, $fw-2, $color-dark-1);
+      }
+    }
+    .card__text {
+      font-size: 15px;
+      text-align: center;
+    }
+  }
+}

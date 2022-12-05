@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header #header .menuGroup {
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+}
+header #header .menuGroup ul {
+  height: 90px;
+  align-items: center;
+  position: relative;
+}
+header #header .menuGroup .nav-item {
+  padding: 0 40px 0 0;
+}
+header #header .menuGroup .nav-item .nav-link {
+  color: black;
+  transition: all 0.5s;
+}
+header #header .menuGroup .nav-item .nav-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  margin-left: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #b61984;
+  transition: all 0.5s;
+  transform: scale(0);
+}
+header #header .menuGroup .nav-item .nav-link:hover {
+  color: #b61984;
+}
+header #header .menuGroup .nav-item .nav-link:hover::after {
+  transform: scale(1);
+}
+header #header .menuGroup .active .nav-link::after {
+  transform: scale(0.8);
+}
+header #header .menuGroup .active .nav-link:hover::after {
+  transform: 1;
+}
+header #header .menuGroup .nav__contact {
+  display: flex;
+  justify-content: center;
+  padding-left: 0.75rem;
+  align-items: center;
+}
+header #header .menuGroup .nav__contact .nav__content {
+  padding: 1.1em 1.5em;
+  border: 1px solid #b61984;
+  border-radius: 40px;
+  background-color: #b61984;
+  transition: all 0.5s ease;
+}
+header #header .menuGroup .nav__contact .nav__content:hover {
+  background-color: white;
+}
+header #header .menuGroup .nav__contact .nav__content:hover a {
+  color: #b61984;
+}
+header #header .menuGroup .nav__contact .nav__content a {
+  color: white;
+  text-decoration: none;
+}
+header #header .menuGroup .nav__contact .nav__social {
+  display: flex;
+  padding-left: 1.1rem;
+}
+header #header .menuGroup .nav__contact .nav__social a {
+  padding: 9px;
+  color: black;
+  transition: all 0.5s;
+}
+header #header .menuGroup .nav__contact .nav__social a:hover {
+  color: #b61984;
+}
+
+#carousel {
+  position: relative;
+}
+#carousel::before {
+  background-image: url(./../../img/images/yellow_top_wave_01.png);
+  content: "";
+  display: block;
+  height: 100px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  z-index: 1111;
+}
+#carousel::after {
+  background-image: url(./../../img/images/Violet_top_left_wave.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  z-index: 111;
+}
+#carousel .carousel__content {
+  align-items: center;
+}
+#carousel .carousel__content .title {
+  width: 50%;
+}
+#carousel .carousel__content .title h2 {
+  font-size: 3.8rem;
+  font-weight: 700;
+  color: black;
+}
+#carousel .carousel__content .title p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #b61984;
+  margin-bottom: 0;
+}
+
+#intro .card {
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.5s;
+}
+#intro .card:hover {
+  box-shadow: 0px 0px 25px rgba(122, 120, 120, 0.7);
+}
+#intro .card img {
+  transform: scale3d(1, 1, 1);
+  transition: all 0.5s;
+}
+#intro .card img:hover {
+  transform: scale3d(1.1, 1.1, 1.1);
+}
+#intro .card .card-title {
+  text-align: center;
+}
+#intro .card .card-title p {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #b61984;
+}
+#intro .card .card-title h4 {
+  font-size: 1.55rem;
+  font-weight: 600;
+  color: black;
+}
+#intro .card .card__text {
+  font-size: 15px;
+  text-align: center;
+}
+
+#form .form__content {
+  display: flex;
+  align-items: center;
+}
+#form .form__content .form__left {
+  padding: 20px;
+}
+#form .form__content .form__right .form__contact {
+  display: flex;
+}/*# sourceMappingURL=style.css.map */

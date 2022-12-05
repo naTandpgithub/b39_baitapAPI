@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <!-- font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- style -->
+<style>
+  .loader {
+    margin: auto;
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+</style>
+
+
+
+  <!-- link css  -->
+  <link rel="stylesheet" href="./scss/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav id="header" class="navbar navbar-expand-lg container">
+      <a class="navbar-brand" href="#">
+        <img src="./img/images/crest.png" alt="" class="img-fluid" style="width: 80px" />
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse menuGroup" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home </a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Elements</a>
+          </li>
+        </ul>
+        <div class="nav__contact">
+          <div class="nav__content">
+            <a href=""><i class="fa-solid fa-phone-flip"></i> (+1) 555 234-8765</a>
+          </div>
+          <div class="nav__social">
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+<!-- background  -->
+<!-- 
+<section id="crs">
+  <div class="background-before">
+     
+  </div>
+  <div class="carousel_content">
+      <div class="row">
+          <div class="col-lg-6 col-sm-12 carousel-left">
+              <div>
+                  <h3>about us</h3>
+                  <h1>The language teaching experts</h1>
+              </div>
+              
+          </div>
+          <div class="col-lg-6 col-sm-12 carousel-right">
+              <img src="./img/images/hero_team.png" alt="">
+          </div>
+      </div>            
+  </div>
+  <div class="background-after">           
+  </div>
+</section>
+ -->
+
+
+
+
+
+
+  <!-- carousel  -->
+  <section id="carousel">
+    <!-- <div class="background-before"> -->
+
+    <div class="container">
+      <div class="carousel__content d-flex">
+        <div class="title">
+          <p>ABOUT US</p>
+          <h2>The language teaching experts</h2>
+        </div>
+        <div class="carousel__right">
+          <img src="./img/images/hero_team.png" class="img-fluid" />
+        </div>
+      </div>
+    </div>
+    <!-- <div class="background-after">    -->
+  </section>
+  <!-- Introduce  -->
+  <section id="intro">
+    <div class="container">
+      <!-- loader  -->
+      <div id="loader" class="loader  " style="display: none;"></div>
+      <div class="row"  id="teacher">
+        <!-- <div class="col-12 col-sm-6 col-lg-3  my-3">
+          <div class="card">
+            <img class="card-img-top" src="./img/images/teacher_1.jpg" alt="" />
+            <div class="card-body">
+              <div class="card-title">
+                <p>ITALIAN</p>
+
+                <h4>July Roberts</h4>
+              </div>
+              <div class="card__text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div> -->
+       
+      </div>
+    </div>
+  </section>
+
+  <!-- form  -->
+  <section id="form">
+    <div class="container">
+
+      <div class="form__content">
+
+        <div class="form__left">
+          <img src="./img/images/conatct_inner.png" class="img-fluid">
+        </div>
+        <div class="form__right">
+          <div class="form__title">
+            <h4>Find Your Course</h4>
+          </div>
+          <div class="form__cover">
+            <form>
+              <div class="form__contact">
+                <div class="contact__name">
+                  <i></i> <input type="text" placeholder="Name">
+                </div>
+                <div class="contact__email">
+                  <i></i> <input type="text" placeholder="E-mail">
+                </div>
+              </div>
+              <div class="form__language">
+                <select>
+                  <option value="English"></option>
+                  <option value="French"></option>
+                  <option value="Spanish"></option>
+                  <option value="German"></option>
+
+
+                </select>
+
+              </div>
+              <div class="form__text">
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+              </div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+  <!-- Axios  -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.2.0/axios.min.js"
+    integrity="sha512-QIsQNDM8hG/1Z3If8Zh2BcpQ79KL3ra1wVMVSliBjQfFMlWMA3tCSe6ZfTK9rw2Ag4hOQ4P5ZhQd4nQl2dMeog=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ -->
+
+
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.2.0/axios.min.js"
+    integrity="sha512-OdkysyYNjK4CZHgB+dkw9xQp66hZ9TLqmS2vXaBrftfyJeduVhyy1cOfoxiKdi4/bfgpco6REu6Rb+V2oVIRWg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+<!-- 
+  <script src="./src/models/data.js"></script>
+  <script src="./src/services/services.js"></script>
+  <script src="./src/controllers/main.js"></script> -->
+
+
+<script src="./src/models/data.js"></script>
+<script src="./src/services/services.js"></script>
+<script src="./src/controllers/main.js"></script>
+
+
+
+
+
+
+</body>
+
+</html>

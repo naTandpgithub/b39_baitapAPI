@@ -1,0 +1,95 @@
+#carousel {
+  position: relative;
+  &::before {
+    background-image: url(./../../img/images/yellow_top_wave_01.png);
+    content: "";
+    display: block;
+    height: 100px;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    z-index: 1111;
+  }
+  &::after {
+    background-image: url(./../../img/images/Violet_top_left_wave.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    z-index: 111;
+  }
+
+  // .background-before {
+  //   background-image: url(./../../img/images/yellow_top_wave_01.png);
+  //   background-position: top;
+  //   background-repeat: no-repeat;
+  //   background-size: contain;
+  //   height: 15rem;
+  //   // z-index: 1;
+  // }
+  // .background-after {
+  //   background-image: url(../../img/images/Violet_top_left_wave.png);
+  //   background-position: top;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   height: 16rem;
+  //   // z-index: 1;
+  // }
+
+  .carousel__content {
+    align-items: center;
+
+    .title {
+      width: 50%;
+
+      h2 {
+        @include style-text($fs-6, $fw-3, $color-dark-1);
+      }
+
+      p {
+        @include style-text($fs-3, $fw-2, $color-purple-1);
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+// #crs {
+//   .background-before {
+//     background-image: url(./../../img/images/yellow_top_wave_01.png);
+//     background-position: top;
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     height: 15rem;
+//   }
+//   .background-after {
+//     background-image: url(../../img/images/Violet_top_left_wave.png);
+//     background-position: top;
+//     background-repeat: no-repeat;
+//     background-size: cover;
+//     height: 16rem;
+//   }
+//   .carousel_content {
+//     margin: 0 8rem;
+//     height: 30rem;
+//     align-content: center !important;
+//     .carousel-left {
+//       display: flex;
+//       align-items: center;
+//       h3 {
+//         color: $background-color-button;
+//         text-transform: uppercase;
+//         font-size: 18px;
+//         font-weight: 700;
+//       }
+//       h1 {
+//         font-size: 80px;
+//         font-weight: 700;
+//       }
+//     }
+//     .carousel-right {
+//       img {
+//         height: 130%;
+//       }
+//     }
+//   }
+// }

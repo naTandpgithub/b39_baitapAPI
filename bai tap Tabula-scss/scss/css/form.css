@@ -1,0 +1,10 @@
+#form .form__content {
+  display: flex;
+  align-items: center;
+}
+#form .form__content .form__left {
+  padding: 20px;
+}
+#form .form__content .form__right .form__contact {
+  display: flex;
+}/*# sourceMappingURL=form.css.map */
